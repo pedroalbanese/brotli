@@ -11,6 +11,8 @@ It was translated from the reference implementation (https://github.com/google/b
 Compress or uncompress FILE (by default, compress FILE in-place).
 
   -c    write on standard output, keep original files unchanged
+  -cores int
+        number of cores to use for parallelization (default 1)
   -d    decompress; see also -c and -k
   -f    force overwrite of output file
   -h    print this help message
