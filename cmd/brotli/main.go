@@ -1,7 +1,6 @@
 // Copyright (c) 2021, Pedro Albanese. All rights reserved.
 // Use of this source code is governed by a MIT license that
 // can be found in the LICENSE file.
-
 package main
 
 import (
@@ -23,6 +22,7 @@ var (
 	help       = flag.Bool("h", false, "print this help message")
 	keep       = flag.Bool("k", false, "keep original files unchaned")
 	suffix     = flag.String("s", "brotli", "use provided suffix on compressed files")
+	cores      = flag.Int("cores", 1, "number of cores to use for parallelization")
 
 	stdin bool
 )
@@ -68,7 +68,11 @@ func main() {
 	if flag.NArg() > 1 {
 		exit("too many file, provide at most one file at a time or check order of flags")
 	}
+	if *cores < 1 || *cores > 32 {
+		exit("invalid number of cores")
+	}
 
+	runtime.GOMAXPROCS(*cores)
 	var inFilePath string
 	var outFilePath string
 	if flag.NArg() == 0 || flag.NArg() == 1 && flag.Args()[0] == "-" { // parse args: read from stdin
