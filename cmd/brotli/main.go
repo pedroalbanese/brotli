@@ -73,6 +73,7 @@ func main() {
 	}
 
 	runtime.GOMAXPROCS(*cores)
+	
 	var inFilePath string
 	var outFilePath string
 	if flag.NArg() == 0 || flag.NArg() == 1 && flag.Args()[0] == "-" { // parse args: read from stdin
