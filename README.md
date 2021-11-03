@@ -16,7 +16,7 @@ Compress or uncompress FILE (by default, compress FILE in-place).
   -d    decompress; see also -c and -k
   -f    force overwrite of output file
   -h    print this help message
-  -k    keep original files unchaned
+  -k    keep original files unchanged
   -s string
         use provided suffix on compressed files (default "brotli")
 
