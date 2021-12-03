@@ -55,7 +55,7 @@ func main() {
 		usage()
 		log.Fatal(0)
 	}
-	//if *stdout == true && *suffix != "brotli" {
+	//if *stdout == true && *suffix != "br" {
 	if *stdout == true && setByUser("s") == true {
 		exit("stdout set, suffix not used")
 	}
