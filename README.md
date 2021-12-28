@@ -1,5 +1,6 @@
 # brotli
-[![ISC License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pedroalbanese/brotli/blob/master/LICENSE) 
+[![ISC License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pedroalbanese/brotli/blob/master/LICENSE)
+[![GitHub downloads](https://img.shields.io/github/downloads/pedroalbanese/brotli/total.svg?logo=github&logoColor=white)](https://github.com/pedroalbanese/brotli/releases)
 [![GoDoc](https://godoc.org/github.com/pedroalbanese/brotli?status.png)](http://godoc.org/github.com/pedroalbanese/brotli)
 [![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/brotli)](https://goreportcard.com/report/github.com/pedroalbanese/brotli)
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/pedroalbanese/brotli)](https://golang.org)
